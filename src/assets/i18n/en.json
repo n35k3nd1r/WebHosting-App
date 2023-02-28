@@ -1,0 +1,48 @@
+{
+  "APP": {
+    "TITLE": "Webhosting App"
+  },
+  "NAV": {
+    "HOME": "Home",
+    "PRICING": "Pricing",
+    "SIGNUP": "Sign Up"
+  },
+  "HOME": {
+    "TITLE": "Welcome to our Webhosting App!",
+    "FEATURE1": "Reliable hosting for your website",
+    "FEATURE2": "24/7 customer support",
+    "FEATURE3": "Easy-to-use control panel",
+    "ACTION": "Get Started"
+  },
+  "PRICING": {
+    "TITLE": "Pricing",
+    "PLAN1": {
+      "NAME": "Basic",
+      "DESCRIPTION": "A basic hosting plan for small websites",
+      "PRICE": "$5/month"
+    },
+    "PLAN2": {
+      "NAME": "Pro",
+      "DESCRIPTION": "A hosting plan for larger websites",
+      "PRICE": "$10/month"
+    },
+    "PLAN3": {
+      "NAME": "Enterprise",
+      "DESCRIPTION": "Custom hosting plans for enterprises",
+      "PRICE": "Contact us for pricing"
+    },
+    "ACTION": "Sign Up"
+  },
+  "SIGNUP": {
+    "TITLE": "Sign Up",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
+    "TERMS": "I agree to the terms and conditions",
+    "ACTION": "Sign Up"
+  },
+  "THEME": {
+    "DARK_MODE": "Dark Mode"
+  }
+}

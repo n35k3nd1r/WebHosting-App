@@ -1,0 +1,82 @@
+// Define the primary color
+$primary-color: #2196f3;
+
+// Define the dark theme
+.dark-theme {
+--background-color: #222;
+--text-color: #fff;
+--primary-color: #64b5f6;
+}
+
+// Define the light theme
+.light-theme {
+--background-color: #fff;
+--text-color: #222;
+--primary-color: #2196f3;
+}
+
+body {
+background-color: var(--background-color);
+color: var(--text-color);
+}
+
+.navbar {
+background-color: var(--primary-color);
+}
+
+.nav-link.active {
+color: var(--primary-color) !important;
+}
+
+.form-control:focus {
+border-color: var(--primary-color) !important;
+box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25) !important;
+}
+
+.btn-primary {
+background-color: var(--primary-color);
+border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+background-color: #1976d2;
+border-color: #1976d2;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+background-color: var(--primary-color);
+border-color: var(--primary-color);
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+}
+
+.dark-mode {
+@extend .dark-theme;
+}
+
+.light-mode {
+@extend .light-theme;
+}
+
+// Responsive font sizes
+$mobile-font-size: 16px;
+$tablet-font-size: 18px;
+$desktop-font-size: 20px;
+
+// Media queries for font size
+@media (min-width: 576px) {
+html {
+font-size: $tablet-font-size;
+}
+}
+
+@media (min-width: 992px) {
+html {
+font-size: $desktop-font-size;
+}
+}
+
+// Import the global styles
+@import './styles/global_styles';

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" [ngClass]="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }" i18n>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ 'APP.TITLE' | translate }}</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Load the theme styles -->
+  <link rel="stylesheet" href="{{ isDarkMode ? 'dark-theme.css' : 'light-theme.css' }}">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">{{ 'APP.TITLE' | translate }}</a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{ 'NAV.HOME' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pricing" routerLinkActive="active">{{ 'NAV.PRICING' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/signup" routerLinkActive="active">{{ 'NAV.SIGNUP' | translate }}</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="darkModeSwitch" [checked]="isDarkMode" (change)="toggleDarkMode()">
+          <label class="custom-control-label" for="darkModeSwitch">{{ 'THEME.DARK_MODE' | translate }}</label>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Main content area -->
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Load the required scripts -->
+  <script src="runtime.js"></script>
+  <script src="polyfills.js"></script>
+  <script src="vendor.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

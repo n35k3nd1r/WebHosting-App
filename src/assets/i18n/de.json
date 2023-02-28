@@ -1,0 +1,31 @@
+{
+  "APP": {
+    "TITLE": "Webhosting-App"
+  },
+  "NAV": {
+    "HOME": "Startseite",
+    "PRICING": "Preise",
+    "SIGNUP": "Registrieren"
+  },
+  "THEME": {
+    "DARK_MODE": "Dunkles Theme"
+  },
+  "HOME": {
+    "TITLE": "Willkommen bei der Webhosting-App",
+    "BODY": "Diese App bietet eine einfache Möglichkeit, ein Webhosting-Paket auszuwählen und sich zu registrieren."
+  },
+  "PRICING": {
+    "TITLE": "Unsere Preise",
+    "BODY": "Wir bieten verschiedene Pakete zu unterschiedlichen Preisen an."
+  },
+  "SIGNUP": {
+    "TITLE": "Registrierung",
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "E-Mail",
+      "PASSWORD": "Passwort",
+      "CONFIRM_PASSWORD": "Passwort bestätigen",
+      "SUBMIT": "Absenden"
+    }
+  }
+}
