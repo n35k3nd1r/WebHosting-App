@@ -10,9 +10,7 @@ import { User } from './user.model';
 export class SignupComponent {
   user: User = new User();
 
-  constructor() {
-    constructor(private translate: TranslateService) { }
-  }
+  constructor(private translate: TranslateService) { }
   
   onSubmit() {
     console.log('User:', this.user);

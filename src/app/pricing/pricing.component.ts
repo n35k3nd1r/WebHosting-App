@@ -6,8 +6,5 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './pricing.component.html'
 })
 export class PricingComponent {
-
-  constructor() {
-    constructor(private translate: TranslateService) { }
-  }
+  constructor(private translate: TranslateService) { }
 }
