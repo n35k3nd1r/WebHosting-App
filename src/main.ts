@@ -28,7 +28,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    TranslateModule.forChild()
   ],
   providers: [],
   bootstrap: [AppComponent]

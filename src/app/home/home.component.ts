@@ -1,13 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateModule , TranslateService } from '@ngx-translate/core';
-
-@NgModule({
-  declarations: [HomeComponent],
-  imports: [
-    CommonModule,
-    TranslateModule.forChild(),
-  ],
-})
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
